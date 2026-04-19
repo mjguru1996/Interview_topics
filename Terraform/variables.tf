@@ -1,8 +1,11 @@
-variable "instance_type" {
-  description = "Instance type used"
-  default = "t3.micro"
+variable "ami_value" {
+  description = "Ami used to create instance"
 }
-variable "ami" {
-  description = "ami used"
-  default = "ami-05d2d839d4f73aafb"
+
+variable "Instance_type" {
+  description = "Instance type for the server"
+}
+
+variable "key_name" {
+  description = "Key name for the server"
 }

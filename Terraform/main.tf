@@ -1,8 +1,8 @@
-resource "aws_instance" "Terraform-server" {
-  ami = var.ami
-  instance_type = var.instance_type
-  key_name = "Mumbai"
-}
+# resource "aws_instance" "Terraform-server" {
+#   ami = var.ami
+#   instance_type = var.instance_type
+#   key_name = "Mumbai"
+# }
 
 # Contional Variabes Example:
 
@@ -31,3 +31,9 @@ resource "aws_instance" "Terraform-server" {
 #     cidr_blocks = var.environment == "prod" ? [var.prod_subnet_cidr] : [var.dev_subnet_cidr]
 #   }
 # }
+resource "aws_instance" "Terraform-server" {
+  ami           = var.ami_value
+  instance_type = var.Instance_type
+  key_name      = var.key_name
+  
+}
