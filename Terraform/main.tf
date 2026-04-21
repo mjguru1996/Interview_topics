@@ -37,3 +37,6 @@ resource "aws_instance" "Terraform-server" {
   key_name      = var.key_name
   
 }
+resource "aws_s3_bucket" "Terraform-bucket" {
+  bucket = var.bucket_name
+}

@@ -9,3 +9,6 @@ variable "Instance_type" {
 variable "key_name" {
   description = "Key name for the server"
 }
+variable "bucket_name" {
+  description = "Name of the S3 bucket"
+}
