@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = var.bucket_name
+    bucket = "terraform-bucket-guru"
     region = "ap-south-1"
   }
 }
